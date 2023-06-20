@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "CSSonestopshop",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "S3DeploymentBucket": "amplify-cssonestopshop-staging-221513-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/d4c17f85d0c5d4139c94a9e77bbaa39265df53d0"
+}

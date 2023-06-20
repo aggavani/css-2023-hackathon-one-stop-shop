@@ -1,0 +1,6 @@
+type InputInformation @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  scope: String
+  attribute: String
+  marketplace: String
+}
