@@ -8,12 +8,9 @@ import {
 // import * as XLSX from 'xlsx/xlsx.mjs';
 import consistencyMetricsData from './data/Consistency_Metrics_SHIRT-material.json'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {
- HeroLayout2 
-} from './ui-components';
 import InputForm from './InputForm';
-import { Outlet, Link } from "react-router-dom";
-
+import Home from './Home';
+import AttributeInfo from './AttributeInfo'
 
 class App extends Component {
   constructor(props) {
@@ -23,18 +20,16 @@ class App extends Component {
   
 
   render() {
-
-
     return (
       <div className="App">
-          <BrowserRouter>
           <Routes>
-            <Route path="/" element={<HeroLayout2 autoLayoutHorizontal37891393={<button>Get Started</button>}/>}>
-              <Route index element={<HeroLayout2 />} />
-              <Route path="inputForm" element={<InputForm />} />
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path="/inputForm" element={<InputForm />} />
+              <Route path="/attributeInfo" element={<AttributeInfo />} />
             </Route>
           </Routes>
-    </BrowserRouter>
+
     </div>
     );
   }

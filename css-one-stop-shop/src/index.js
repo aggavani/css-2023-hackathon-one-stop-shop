@@ -8,16 +8,15 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import "@aws-amplify/ui-react/styles.css";
 import studioTheme from './ui-components/studioTheme';
+import { BrowserRouter } from "react-router-dom";
+
 Amplify.configure(awsconfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <ThemeProvider theme={studioTheme}>
-      <App />
-    </ThemeProvider>
-
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
