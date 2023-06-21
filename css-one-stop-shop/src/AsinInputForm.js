@@ -5,9 +5,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-export default function InputForm() {
+export default function AsinInputForm() {
   const [initialValues, setInitialValues] = useState({
-    scope:"",
+    asin:"",
     attribute:"",
     marketplace:""
   });
@@ -29,12 +29,12 @@ export default function InputForm() {
   }, [formValues]);
   return (
     <div>
-      <h1>Enter Context Information</h1>
+      <h1>Enter ASIN Information</h1>
       <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Scope</Form.Label>
-        <Form.Control type="scope" placeholder="Scope" onChange={(e) =>
-            setInitialValues({ ...initialValues, scope: e.target.value })
+        <Form.Label>ASIN</Form.Label>
+        <Form.Control type="asin" placeholder="ASIN" onChange={(e) =>
+            setInitialValues({ ...initialValues, asin: e.target.value })
           }/>
       </Form.Group>
 
@@ -57,9 +57,9 @@ export default function InputForm() {
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>
-        <Modal.Body>Retrieving Context Information</Modal.Body>
+        <Modal.Body>Retrieving ASIN Information</Modal.Body>
         <Modal.Footer>
-    <Link to="/attributeInfo">
+    <Link to="/asinInfo">
         <Button variant="secondary" size="lg">
         Proceed
       </Button>

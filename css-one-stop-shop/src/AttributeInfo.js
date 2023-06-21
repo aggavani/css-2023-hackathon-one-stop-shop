@@ -34,18 +34,6 @@ export default function AttributeInfo() {
       <Card.Footer className="text-muted" style={{height: '5vh'}}></Card.Footer>
     </Card>
 
-{/* <center>
-
-     <Card style={{ width: '18rem' }}>
-      <ListGroup variant="flush">
-        <ListGroup.Item>Number of ASINs: 441,711,786</ListGroup.Item>
-        <ListGroup.Item>Fields: </ListGroup.Item>
-        <ListGroup.Item>Localized: Yes</ListGroup.Item>
-        <ListGroup.Item>Category Manager: </ListGroup.Item>
-      </ListGroup>
-    </Card>
-    </center>
- */}
          <Card className="text-center">
       <Card.Body>
               <ListGroup variant="flush">

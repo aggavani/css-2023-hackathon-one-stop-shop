@@ -16,26 +16,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Header() {
   return (
-    // <Box sx={{ flexGrow: 1 }}>
-    //   <AppBar position="static">
-    //     <Toolbar>
-    //       <IconButton
-    //         size="large"
-    //         edge="start"
-    //         aria-label="menu"
-    //         sx={{ mr: 2 }}
-    //       >
-    //         {/* <MenuIcon /> */}
-    //       </IconButton>
-    //       <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-    //       </Typography>
-    //       <Link to="/">
-    //       <Button color="inherit">Home</Button>
-    //       </Link>
-    //     </Toolbar>
-    //   </AppBar>
-    // </Box>
-
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand>

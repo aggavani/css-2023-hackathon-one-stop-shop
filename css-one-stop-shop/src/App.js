@@ -5,6 +5,8 @@ import InputForm from './InputForm';
 import Home from './Home';
 import AttributeInfo from './AttributeInfo'
 import Header from './Header';
+import AsinInfo from './AsinInfo'
+import AsinInputForm from './AsinInputForm';
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +14,6 @@ class App extends Component {
 
   }
   
-
   render() {
     return (
       <div className="App">
@@ -26,6 +27,8 @@ class App extends Component {
               <Route path="/metrics" element={<AttributeInfo />} />
               <Route path="/validation" element={<AttributeInfo />} />
               <Route path="/consistency" element={<AttributeInfo />} />
+              <Route path="/asinInfo" element={<AsinInfo />} />
+              <Route path="/asinInputForm" element={<AsinInputForm />} />
             </Route>
           </Routes>
 
