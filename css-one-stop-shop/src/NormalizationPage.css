@@ -1,0 +1,79 @@
+/*.collapsible-card {*/
+/*    border: 1px solid #ccc;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.card-header {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: 10px;*/
+/*    background-color: #f2f2f2;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.card-body {*/
+/*    display: none;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.collapsible-card.expanded {*/
+/*    display: block;*/
+/*}*/
+
+/*.collapse-icon {*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    border-left: 2px solid #000;*/
+/*    border-bottom: 2px solid #000;*/
+/*    transform: rotate(-45deg);*/
+/*    transition: transform 0.3s;*/
+/*}*/
+
+/*.collapsible-card.expanded .collapse-icon {*/
+/*    transform: rotate(135deg);*/
+/*}*/
+
+.textbox {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.constraint-text {
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.table-container {
+    margin: 20px;
+}
+
+.excel-table {
+    border-collapse: collapse;
+    width: 100%; /* Set the desired width here */
+}
+
+.excel-table th,
+.excel-table td {
+    padding: 2px; /* Reduce the padding here */
+    border: 1px solid #ddd;
+    font-size: 8px; /* Reduce the font size here */
+}
+
+.excel-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+.excel-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.excel-table tr:hover {
+    background-color: #f5f5f5;
+}

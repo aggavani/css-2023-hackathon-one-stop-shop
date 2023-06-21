@@ -27,7 +27,7 @@ class App extends Component {
               <Route index element={<Home />} />
               <Route path="/inputForm" element={<InputForm />} />
               <Route path="/attributeInfo" element={<AttributeInfo />} />
-              <Route path="/normalization" element={<AttributeInfo />} />
+              <Route path="/normalization" element={<NormalizationPage />} />
               <Route path="/metrics" element={<MetricsPage />} />
               <Route path="/completeness" element={<CompletenessPage />} />
               <Route path="/asinInfo" element={<AsinInfo />} />
