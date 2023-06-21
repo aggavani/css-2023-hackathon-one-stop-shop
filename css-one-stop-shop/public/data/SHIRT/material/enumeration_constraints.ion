@@ -1,0 +1,33 @@
+{
+  domain_id:10480,
+  ccp_product_type_name:PRODUCT,
+  status:active,
+  ccp_contributor_type_name:contributor,
+  reference_code:"0effb44c-86aa-4ff3-88f3-a2763a101ac8",
+  ccp_attribute_name:[
+    material
+  ],
+  ccp_variant_path:language_tag,
+  ccp_constraint_type_name:enumeration,
+  records:select::[
+    {
+      applies_to:[
+      ],
+      reference_code:"138e9b7a-d1f1-43a4-85ad-a920819538d5",
+      parameters:{
+        name:language_tag
+      }
+    }
+  ],
+  table_name:ccp_attribute_constraints,
+  audit_info:{
+    creation_date:2017-03-24T18:18:01.182Z,
+    created_by:pssunder,
+    created_via:CatalogAdmin,
+    reason:"Add sidelined IOP enumeration constraints",
+    related_urls:[
+      "https://issues.amazon.com/issues/CMP-1960"
+    ]
+  },
+  stage_version:"CCPDevo-329"
+}

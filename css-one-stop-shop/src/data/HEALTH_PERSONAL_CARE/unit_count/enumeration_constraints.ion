@@ -1,0 +1,41 @@
+{
+  domain_id:11111,
+  ccp_product_type_name:HEALTH_PERSONAL_CARE,
+  ccp_contributor_type_name:contributor,
+  ccp_attribute_name:[
+    unit_count
+  ],
+  ccp_variant_path:'type.value',
+  ccp_constraint_type_name:enumeration,
+  records:select::[
+    {
+      applies_to:[
+        {
+          record_context:{
+            creation_date:[
+              gte::2019-09-16T00:00:00.000Z
+            ]
+          }
+        }
+      ],
+      parameters:{
+        name:consumables_unit_count_type,
+        value_proxy:label
+      },
+      reference_code:"d543e28e-57bd-4865-a258-ae5837bec43b"
+    }
+  ],
+  reference_code:"cca5d17e-3811-4edd-b20c-21ff10746dc1",
+  status:active,
+  table_name:ccp_attribute_constraints,
+  audit_info:{
+    creation_date:2019-09-17T13:10:36.580Z,
+    created_by:hgavin,
+    created_via:'CatalogAdminUI/Prod',
+    reason:"Enumeration request unit_count.type",
+    related_urls:[
+      "https://issues.amazon.com/issues/CPGValidationRules-144"
+    ]
+  },
+  stage_version:"CCPProd-6379"
+}

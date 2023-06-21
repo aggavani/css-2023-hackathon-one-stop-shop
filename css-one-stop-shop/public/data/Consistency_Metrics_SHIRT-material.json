@@ -1,0 +1,56 @@
+[
+    {
+        "\ufeffDate": "6/3/23 0:00",
+        "asincountconsistent": "1478165648",
+        "Total Filled ASIN": "2006370704",
+        "Consistency(%)": "0.7367",
+        "gvconsistent": "2925070056",
+        "Total Filled GV": "3384411140",
+        "Consistency GV %": "0.8642"
+    },
+    {
+        "\ufeffDate": "5/6/23 0:00",
+        "asincountconsistent": "1487238612",
+        "Total Filled ASIN": "1986967148",
+        "Consistency(%)": "0.7484",
+        "gvconsistent": "2737601760",
+        "Total Filled GV": "3189437100",
+        "Consistency GV %": "0.8583"
+    },
+    {
+        "\ufeffDate": "4/8/23 0:00",
+        "asincountconsistent": "1410773120",
+        "Total Filled ASIN": "1805884920",
+        "Consistency(%)": "0.7812",
+        "gvconsistent": "2526289260",
+        "Total Filled GV": "2950282580",
+        "Consistency GV %": "0.8562"
+    },
+    {
+        "\ufeffDate": "3/4/23 0:00",
+        "asincountconsistent": "1398480844",
+        "Total Filled ASIN": "1645829228",
+        "Consistency(%)": "0.8497",
+        "gvconsistent": "2263345796",
+        "Total Filled GV": "2580541988",
+        "Consistency GV %": "0.877"
+    },
+    {
+        "\ufeffDate": "2/4/23 0:00",
+        "asincountconsistent": "1326920524",
+        "Total Filled ASIN": "1552999552",
+        "Consistency(%)": "0.8544",
+        "gvconsistent": "2149948008",
+        "Total Filled GV": "2474698948",
+        "Consistency GV %": "0.8687"
+    },
+    {
+        "\ufeffDate": "1/7/23 0:00",
+        "asincountconsistent": "1256039092",
+        "Total Filled ASIN": "1464793628",
+        "Consistency(%)": "0.8574",
+        "gvconsistent": "2330002092",
+        "Total Filled GV": "2694598140",
+        "Consistency GV %": "0.8646"
+    }
+]

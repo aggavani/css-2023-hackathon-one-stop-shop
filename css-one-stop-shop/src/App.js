@@ -3,10 +3,12 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import InputForm from './InputForm';
 import Home from './Home';
-import AttributeInfo from './AttributeInfo'
+import AttributeInfo from './AttributeInfo';
 import Header from './Header';
 import AsinInfo from './AsinInfo'
 import AsinInputForm from './AsinInputForm';
+import { ValidationPage } from './ValidationPage';
+import { MetricsPage } from './MetricsPage';
 
 class App extends Component {
   constructor(props) {
@@ -24,11 +26,11 @@ class App extends Component {
               <Route path="/inputForm" element={<InputForm />} />
               <Route path="/attributeInfo" element={<AttributeInfo />} />
               <Route path="/normalization" element={<AttributeInfo />} />
-              <Route path="/metrics" element={<AttributeInfo />} />
-              <Route path="/validation" element={<AttributeInfo />} />
+              <Route path="/metrics" element={<MetricsPage />} />
               <Route path="/consistency" element={<AttributeInfo />} />
               <Route path="/asinInfo" element={<AsinInfo />} />
               <Route path="/asinInputForm" element={<AsinInputForm />} />
+              <Route path="/validation" element={<ValidationPage />} />
             </Route>
           </Routes>
 
