@@ -60,7 +60,7 @@ export default function InputForm() {
         <Modal.Body>Retrieving Context Information</Modal.Body>
         <Modal.Footer>
     <Link to="/attributeInfo">
-        <Button variant="secondary" size="lg">
+        <Button variant="primary" size="lg">
         Proceed
       </Button>
     </Link>

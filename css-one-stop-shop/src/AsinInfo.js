@@ -57,10 +57,10 @@ export default function App() {
             <TableCell align="center" colSpan={1}>
             </TableCell>
             <TableCell align="center" colSpan={1}>
-              ASIN
+              Item Details
             </TableCell>
             <TableCell align="center" colSpan={1}>
-              SKU
+              Winning SKU Details
             </TableCell>
           </TableRow>
         </TableHead>
