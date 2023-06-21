@@ -10,6 +10,7 @@ import AsinInputForm from './AsinInputForm';
 import { ValidationPage } from './ValidationPage';
 import { MetricsPage } from './MetricsPage';
 import { CompletenessPage } from './CompletenessPage';
+import { NormalizationPage } from './NormalizationPage';
 
 
 class App extends Component {
