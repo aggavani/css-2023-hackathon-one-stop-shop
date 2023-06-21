@@ -4,16 +4,14 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-
-
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-    "& .MuiTableCell-root": {
-      border: '1px solid black'
-    }
-  }
-});
+// const useStyles = makeStyles({
+//   table: {
+//     minWidth: 650,
+//     "& .MuiTableCell-root": {
+//       border: '1px solid black'
+//     }
+//   }
+// });
 
 function createData(name, asin, sku) {
   return { name, asin, sku };
@@ -35,7 +33,7 @@ const rows = [
 ];
 
 export default function App() {
-  const classes = useStyles();
+//   const classes = useStyles();
     const formValues = localStorage.getItem("formValues");
     var stringify = JSON.parse(formValues);
     const asin = stringify[0].asin
@@ -59,7 +57,12 @@ export default function App() {
     </Card>
 
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
+      <Table sx={{
+    minWidth: 650,
+    "& .MuiTableCell-root": {
+      border: '1px solid black'
+    }
+        }} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell align="center" colSpan={1}>
