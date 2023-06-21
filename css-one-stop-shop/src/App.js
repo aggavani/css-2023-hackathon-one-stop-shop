@@ -9,6 +9,8 @@ import AsinInfo from './AsinInfo'
 import AsinInputForm from './AsinInputForm';
 import { ValidationPage } from './ValidationPage';
 import { MetricsPage } from './MetricsPage';
+import { CompletenessPage } from './CompletenessPage';
+
 
 class App extends Component {
   constructor(props) {
@@ -27,7 +29,7 @@ class App extends Component {
               <Route path="/attributeInfo" element={<AttributeInfo />} />
               <Route path="/normalization" element={<AttributeInfo />} />
               <Route path="/metrics" element={<MetricsPage />} />
-              <Route path="/consistency" element={<AttributeInfo />} />
+              <Route path="/completeness" element={<CompletenessPage />} />
               <Route path="/asinInfo" element={<AsinInfo />} />
               <Route path="/asinInputForm" element={<AsinInputForm />} />
               <Route path="/validation" element={<ValidationPage />} />

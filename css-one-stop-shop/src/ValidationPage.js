@@ -22,6 +22,13 @@ export const ValidationPage = () => {
         const worksheet = workbook.Sheets[workbook.SheetNames[0]];
         const jsonData = XLSX.utils.sheet_to_json(worksheet, {header: 1});
         setExcelData(jsonData);
+      } else if (scope === "SHIRT" && attribute === "material") {
+        const valuesFile = await fetch('/data/SHIRT/material/enumeration_values.xlsx');
+        const valuesData = await valuesFile.arrayBuffer();
+        const workbook = XLSX.read(valuesData, {type: 'array'});
+        const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+        const jsonData = XLSX.utils.sheet_to_json(worksheet, {header: 1});
+        setExcelData(jsonData);
       }
     };
 

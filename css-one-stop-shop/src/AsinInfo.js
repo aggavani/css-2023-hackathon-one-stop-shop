@@ -16,7 +16,7 @@ const rows = [
   createData("[department]", "unisex-adult", "mens"),
   createData("[brand]", "crocs", "crocs"),
   createData("[footwear_size]", footwearSize, footwearSize),
-  createData("Winning [size] Value on ASIN", "11 UK , en_IN", "11 UK (M12)"),
+  createData("Winning [size] Value on ASIN", "11 UK", "11 UK (M12)"),
   createData("Contributing System", "DNS (Data Augmenter)", "Retail / Seller Submitted"),
   createData("Modified Date", "2023-06-21T01:56:23.820Z", "2023-06-14T11:23:40.280Z"),
   createData("Submission History", "Link", "Link")

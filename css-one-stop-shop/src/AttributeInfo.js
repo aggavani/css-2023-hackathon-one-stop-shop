@@ -19,6 +19,19 @@ export default function AttributeInfo() {
     const scope = stringify[0].scope
     const attribute = stringify[0].attribute;
     const marketplace = stringify[0].marketplace;
+    var asinCount = "";
+    var fields = "";
+    var categoryManager = "";
+    if (scope === "SHIRT") {
+      asinCount = "441,711,786";
+      fields = "[language_tag], [value]";
+      categoryManager = "apparel-shirt@amazon.com";
+    } else if (scope === "HEALTH_PERSONAL_CARE") {
+      asinCount = "12,203,184";
+      fields = "[type,language_tag], [type,value], [value]";
+      categoryManager = "consumable-health@amazon.com";
+    }
+
   return (
     <div style={{height: '100vh'}}>
         <h2>Retrieved Information For Provided Context: </h2>
@@ -37,10 +50,10 @@ export default function AttributeInfo() {
          <Card className="text-center">
       <Card.Body>
               <ListGroup variant="flush">
-        <ListGroup.Item>Number of ASINs: 441,711,786</ListGroup.Item>
-        <ListGroup.Item>Fields: [language_tag], [value]</ListGroup.Item>
+        <ListGroup.Item>Number of ASINs: {asinCount}</ListGroup.Item>
+        <ListGroup.Item>Fields: {fields}</ListGroup.Item>
         <ListGroup.Item>Localized: Yes</ListGroup.Item>
-        <ListGroup.Item>Category Manager: shirt-material@amazon.com </ListGroup.Item>
+        <ListGroup.Item>Category Manager: {categoryManager} </ListGroup.Item>
       </ListGroup>
 
       </Card.Body>
@@ -90,8 +103,8 @@ export default function AttributeInfo() {
         </tr>
         <tr>
           <td>
-            <Link to="/consistency">
-            <Button variant="outline-secondary">Consistency</Button>
+            <Link to="/completeness">
+            <Button variant="outline-secondary">Completeness</Button>
             </Link></td>
            <td><Checkbox {...label} defaultChecked size="small" /></td>
         </tr>

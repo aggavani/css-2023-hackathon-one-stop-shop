@@ -1,33 +1,33 @@
 {
   domain_id:10480,
-  ccp_product_type_name:PRODUCT,
-  status:active,
+  ccp_product_type_name:SHIRT,
   ccp_contributor_type_name:contributor,
-  reference_code:"0effb44c-86aa-4ff3-88f3-a2763a101ac8",
   ccp_attribute_name:[
     material
   ],
-  ccp_variant_path:language_tag,
-  ccp_constraint_type_name:enumeration,
+  ccp_variant_path:value,
+  ccp_constraint_type_name:soft_enumeration,
   records:select::[
     {
       applies_to:[
       ],
-      reference_code:"138e9b7a-d1f1-43a4-85ad-a920819538d5",
       parameters:{
-        name:language_tag
-      }
+        name:shirt_material
+      },
+      reference_code:"5872b2b4-a95e-43d8-bbf6-86530426b9ad"
     }
   ],
+  reference_code:"f3a1fb6c-4ee3-4731-a70c-ec9bbd7a6431",
+  status:active,
   table_name:ccp_attribute_constraints,
   audit_info:{
-    creation_date:2017-03-24T18:18:01.182Z,
-    created_by:pssunder,
-    created_via:CatalogAdmin,
-    reason:"Add sidelined IOP enumeration constraints",
+    created_by:khanshu,
+    reason:"[Enumeration Discovery] 10480 Migration",
     related_urls:[
-      "https://issues.amazon.com/issues/CMP-1960"
-    ]
+      "https://sim.amazon.com/issues/NLS-3671"
+    ],
+    created_via:'AAA:KDSConceptDiscovery',
+    creation_date:2020-07-26T23:02:47.103Z
   },
-  stage_version:"CCPDevo-329"
+  stage_version:"CCPContributionVersioningProd1.0.x-1325"
 }
