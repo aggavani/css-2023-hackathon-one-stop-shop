@@ -38,9 +38,9 @@ export default function AttributeInfo() {
       <Card.Body>
               <ListGroup variant="flush">
         <ListGroup.Item>Number of ASINs: 441,711,786</ListGroup.Item>
-        <ListGroup.Item>Fields: </ListGroup.Item>
+        <ListGroup.Item>Fields: [language_tag], [value]</ListGroup.Item>
         <ListGroup.Item>Localized: Yes</ListGroup.Item>
-        <ListGroup.Item>Category Manager: </ListGroup.Item>
+        <ListGroup.Item>Category Manager: shirt-material@amazon.com </ListGroup.Item>
       </ListGroup>
 
       </Card.Body>
