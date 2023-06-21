@@ -10,7 +10,11 @@ function createData(name, asin, sku) {
 
 const asinPC = "[\n\n 'catp:Product', \n 'catp:BrandedProduct', \n 'catp:TargetedProduct', \n 'catp:UnisexAdultProduct', \n 'catp:AdultTargetProduct',\n'catp:Footwear',\n'catp:CrocsFootwear',\n'catp:UnisexAdultFootwear',\n'catp:Sandal',\n'catp:SingleItemProduct'\n]"
 const footwearSize = "\{gender:men, age_group:adult, size_system:uk_footwear_size_system, width:medium, size_class:numeric, size:numeric_11}                             "
-const rows = [
+
+const asinLink = () => {
+    return(<a href="https://csi.amazon.com/view?view=submission_history&item_id=&marketplace_id=&customer_id=47195089812&merchant_id=&sku=B01N6J6XWT&fn_sku=&gcid=&fulfillment_channel_code=&listing_type=purchasable&submission_id=&order_id=&external_id=&search_string=&realm=USAmazon&stage=prod&domain_id=&keyword=&submit=Show"></a>)
+}
+    const rows = [
   createData("PT Scope", "SHOES", "SANDAL"),
   createData("PC Scope", asinPC, "N/A"),
   createData("[department]", "unisex-adult", "mens"),
@@ -19,7 +23,6 @@ const rows = [
   createData("Winning [size] Value on ASIN", "11 UK", "11 UK (M12)"),
   createData("Contributing System", "DNS (Data Augmenter)", "Retail / Seller Submitted"),
   createData("Modified Date", "2023-06-21T01:56:23.820Z", "2023-06-14T11:23:40.280Z"),
-  createData("Submission History", "Link", "Link")
 ];
 
 export default function App() {
@@ -74,6 +77,14 @@ export default function App() {
               <TableCell align="center" width='300px'>{row.sku}</TableCell>
             </TableRow>
           ))}
+                      <TableRow >
+              <TableCell align="center" width='100px'>
+                Submission History
+              </TableCell>
+              <TableCell align="center" width='300px'><a href="https://csi.amazon.com/view?view=submission_history&item_id=&marketplace_id=&customer_id=47195089812&merchant_id=&sku=B01N6J6XWT&fn_sku=&gcid=&fulfillment_channel_code=&listing_type=purchasable&submission_id=&order_id=&external_id=&search_string=&realm=USAmazon&stage=prod&domain_id=&keyword=&submit=Show">Link</a></TableCell>
+              <TableCell align="center" width='300px'><a href="https://csi.amazon.com/view?view=submission_history&item_id=&marketplace_id=&customer_id=74055363312&merchant_id=&sku=B01N6J6XWT&fn_sku=&gcid=&fulfillment_channel_code=&listing_type=purchasable&submission_id=&order_id=&external_id=&search_string=&realm=USAmazon&stage=prod&domain_id=&keyword=&submit=Show">Link</a></TableCell>
+            </TableRow>
+
         </TableBody>
       </Table>
     </TableContainer>
