@@ -12,7 +12,7 @@ export default function HeroLayout2(props) {
   const { autoLayoutHorizontal37891393, overrides, ...rest } = props;
   return (
     <View
-      width="1440px"
+      width="1718px"
       height="858px"
       display="block"
       gap="unset"
@@ -24,7 +24,7 @@ export default function HeroLayout2(props) {
       {...rest}
     >
       <View
-        width="1440px"
+        width="1833px"
         height="867px"
         display="block"
         gap="unset"
@@ -46,7 +46,7 @@ export default function HeroLayout2(props) {
           alignItems="flex-start"
           position="absolute"
           top="calc(50% - 219px - 8.5px)"
-          left="calc(50% - 261.5px - -30.5px)"
+          left="calc(50% - 261.5px - -31px)"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Auto Layout Vertical37891388")}
         >
@@ -144,12 +144,12 @@ export default function HeroLayout2(props) {
           {...getOverrideProps(overrides, "Vector37891400")}
         ></Icon>
         <Icon
-          width="352px"
+          width="448.07px"
           height="597px"
-          viewBox={{ minX: 0, minY: 0, width: 352, height: 597 }}
+          viewBox={{ minX: 0, minY: 0, width: 448.0666809082031, height: 597 }}
           paths={[
             {
-              d: "M352 267.861C352 417.485 202.209 757.753 204.029 508.224C205.848 258.695 182.803 535.723 53.0251 420.634C-76.7531 305.545 58.483 0 172.494 0C286.505 0 352 118.238 352 267.861Z",
+              d: "M448.067 267.861C448.067 417.485 257.396 757.753 259.711 508.224C262.027 258.695 232.693 535.723 67.4965 420.634C-97.7003 305.545 74.444 0 219.57 0C364.696 0 448.067 118.238 448.067 267.861Z",
               fill: "rgba(139,123,207,1)",
               fillRule: "nonzero",
             },

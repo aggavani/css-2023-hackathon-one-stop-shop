@@ -9,6 +9,7 @@ import awsconfig from './aws-exports';
 import "@aws-amplify/ui-react/styles.css";
 import studioTheme from './ui-components/studioTheme';
 import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 Amplify.configure(awsconfig);
 

@@ -1,16 +1,10 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
 import './App.css';
-import {
- Features2x2 
-} from './ui-components';
-// import {ExcelRenderer, OutTable} from 'react-excel-renderer';
-// import * as XLSX from 'xlsx/xlsx.mjs';
-import consistencyMetricsData from './data/Consistency_Metrics_SHIRT-material.json'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import InputForm from './InputForm';
 import Home from './Home';
 import AttributeInfo from './AttributeInfo'
+import Header from './Header';
 
 class App extends Component {
   constructor(props) {
@@ -22,11 +16,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
           <Routes>
             <Route path="/">
               <Route index element={<Home />} />
               <Route path="/inputForm" element={<InputForm />} />
               <Route path="/attributeInfo" element={<AttributeInfo />} />
+              <Route path="/normalization" element={<AttributeInfo />} />
+              <Route path="/metrics" element={<AttributeInfo />} />
+              <Route path="/validation" element={<AttributeInfo />} />
+              <Route path="/consistency" element={<AttributeInfo />} />
             </Route>
           </Routes>
 
